@@ -2,8 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { Task } from '../../../interfaces/interfaces';
 
-// const initializer = () => JSON.parse(localStorage.getItem('Tasks')!) || [];
-const initialState: Task[] = [];
+const initialState: Task[] = JSON.parse(localStorage.getItem('Tasks')!) || [];
 
 export const todoSlice = createSlice({
   name: 'todo',
@@ -18,12 +17,16 @@ export const todoSlice = createSlice({
       state.push(payload);
     },
     editTask: (state, action: PayloadAction<Task>) => {
-      state.map((task) => {
-        task.id === action.payload.id ? action.payload : task;
+      return state.map((task: Task) => {
+        if (task.id === action.payload.id) {
+          return action.payload;
+        } else {
+          return task;
+        }
       });
     },
     deleteTask: (state, action: PayloadAction<number>) => {
-      state.filter((task) => task.id !== action.payload);
+      return state.filter((task) => task.id !== action.payload);
     },
   },
 });
