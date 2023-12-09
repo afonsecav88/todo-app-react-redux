@@ -1,0 +1,15 @@
+html , body {
+   background-color: #282C34;
+   color: white;
+}
+
+.button-disable {
+   display: none; 
+}
+.input-disable {
+   border: 0;
+   box-shadow: none;
+   background-color: white;
+   width: 50vh;
+}
+
