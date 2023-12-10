@@ -25,7 +25,6 @@ export const userSlice = createSlice({
       state.isLoading = false;
       state.page = action.payload.page;
       state.usersData = action.payload;
-      console.log(state.isLoading);
     },
   },
 });

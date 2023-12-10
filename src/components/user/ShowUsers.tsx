@@ -21,7 +21,7 @@ export const ShowUsers = () => {
         </button>
       </div>
 
-      <div className="row" d-flex align-content-center justify-content-center>
+      <div className="d-flex align-content-center justify-content-center">
         {page < 3 ? <ShowUserDetails /> : <NotUserShow />}
       </div>
     </div>
