@@ -1,5 +1,5 @@
-import { useAddTask } from '../hooks/useAddTask';
-import { useUpdateLocalStorage } from '../hooks/useUpdateLocalStorage';
+import { useAddTask } from '../../hooks/todo/useAddTask';
+import { useUpdateLocalStorage } from '../../hooks/todo/useUpdateLocalStorage';
 
 export const AddTask = () => {
   const { handleOnChange, handleAddTask, text } = useAddTask();

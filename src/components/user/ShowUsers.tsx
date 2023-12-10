@@ -1,5 +1,5 @@
-import { useGetUsers } from '../hooks/useGetUsers';
-import { getUsers } from '../store/slices/user/thunks';
+import { useGetUsers } from '../../hooks/user/useGetUsers';
+import { getUsers } from '../../store/slices/user/thunks';
 import { NotUserShow } from './NotUserShow';
 import { ShowUserDetails } from './ShowUserDetails';
 

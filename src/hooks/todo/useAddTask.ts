@@ -1,7 +1,7 @@
 import { useState, ChangeEvent } from 'react';
-import { useNotifications } from './useNotifications';
-import { useSelectorAndDispatch } from './useSelectorAndDispatch';
-import { addTask } from '../store/slices/todo/todoSlice';
+import { useNotifications } from '../useNotifications';
+import { useSelectorAndDispatch } from '../useSelectorAndDispatch';
+import { addTask } from '../../store/slices/todo/todoSlice';
 
 export const useAddTask = () => {
   const { dispatch } = useSelectorAndDispatch();

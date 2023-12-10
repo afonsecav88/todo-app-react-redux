@@ -1,6 +1,6 @@
 import { ListItemTask } from './ListItemTask';
-import { Task } from '../interfaces/interfaces';
-import { useSelectorAndDispatch } from '../hooks/useSelectorAndDispatch';
+import { Task } from '../../interfaces/interfaces';
+import { useSelectorAndDispatch } from '../../hooks/useSelectorAndDispatch';
 
 export const ListTask = () => {
   const { tasks } = useSelectorAndDispatch();

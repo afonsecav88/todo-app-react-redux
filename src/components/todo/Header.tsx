@@ -1,4 +1,4 @@
-import { useSelectorAndDispatch } from '../hooks/useSelectorAndDispatch';
+import { useSelectorAndDispatch } from '../../hooks/useSelectorAndDispatch';
 
 export const Header = () => {
   const { tasks } = useSelectorAndDispatch();

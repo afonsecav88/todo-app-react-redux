@@ -1,7 +1,7 @@
-import { AddTask } from './components/AddTask';
-import { Header } from './components/Header';
-import { ListTask } from './components/ListTask';
-import { ShowUsers } from './components/ShowUsers';
+import { AddTask } from './components/todo/AddTask';
+import { Header } from './components/todo/Header';
+import { ListTask } from './components/todo/ListTask';
+import { ShowUsers } from './components/user/ShowUsers';
 import { useNotifications } from './hooks/useNotifications';
 //Add to redux
 import { store } from './store/store';

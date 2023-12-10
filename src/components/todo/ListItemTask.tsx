@@ -1,6 +1,6 @@
-import { Task } from '../interfaces/interfaces';
-import { useEditTask } from '../hooks/useEditTask';
-import { useUpdateLocalStorage } from '../hooks/useUpdateLocalStorage';
+import { Task } from '../../interfaces/interfaces';
+import { useEditTask } from '../../hooks/todo/useEditTask';
+import { useUpdateLocalStorage } from '../../hooks/todo/useUpdateLocalStorage';
 
 type ListTaskProps = {
   item: Task;

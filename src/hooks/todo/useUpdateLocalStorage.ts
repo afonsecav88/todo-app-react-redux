@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useSelectorAndDispatch } from './useSelectorAndDispatch';
+import { useSelectorAndDispatch } from '../useSelectorAndDispatch';
 
 export const useUpdateLocalStorage = () => {
   const { tasks } = useSelectorAndDispatch();

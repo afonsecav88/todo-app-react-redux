@@ -1,8 +1,8 @@
 import { ChangeEvent, useState } from 'react';
-import { Task } from '../interfaces/interfaces';
-import { useNotifications } from './useNotifications';
-import { useSelectorAndDispatch } from './useSelectorAndDispatch';
-import { deleteTask, editTask } from '../store/slices/todo/todoSlice';
+import { Task } from '../../interfaces/interfaces';
+import { useNotifications } from '../useNotifications';
+import { useSelectorAndDispatch } from '../useSelectorAndDispatch';
+import { deleteTask, editTask } from '../../store/slices/todo/todoSlice';
 
 export const useEditTask = (item: Task) => {
   const { taskDeleted, taskEdited } = useNotifications();

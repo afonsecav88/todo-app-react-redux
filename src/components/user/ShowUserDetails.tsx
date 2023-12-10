@@ -1,4 +1,4 @@
-import { useGetUsers } from '../hooks/useGetUsers';
+import { useGetUsers } from '../../hooks/user/useGetUsers';
 
 export const ShowUserDetails = () => {
   const { usersData } = useGetUsers();
