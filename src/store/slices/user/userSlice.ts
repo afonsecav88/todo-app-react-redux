@@ -1,27 +1,34 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-export interface CounterState {
-  value: number;
-}
-const initialState: CounterState = {
-  value: 0,
+import { User, UserData } from '../../../interfaces/interfaces';
+
+const initialState: User = {
+  isLoading: false,
+  page: 1,
+  usersData: {
+    page: 0,
+    per_page: 6,
+    total: 12,
+    total_pages: 2,
+    data: [],
+  },
 };
-export const remplaceSlice = createSlice({
-  name: 'remplace',
+
+export const userSlice = createSlice({
+  name: 'user',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    setLoadingUsers: (state) => {
+      state.isLoading = true;
+      // state.usersData;
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
+    getUsersInfo: (state, action: PayloadAction<UserData>) => {
+      state.isLoading = false;
+      state.page = action.payload.page;
+      state.usersData = action.payload;
+      console.log(state.isLoading);
     },
   },
 });
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } =
-  remplaceSlice.actions;
-export default remplaceSlice.reducer;
+export const { setLoadingUsers, getUsersInfo } = userSlice.actions;

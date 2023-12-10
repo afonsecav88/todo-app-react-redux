@@ -1,6 +1,7 @@
 import { AddTask } from './components/AddTask';
 import { Header } from './components/Header';
 import { ListTask } from './components/ListTask';
+import { ShowUsers } from './components/ShowUsers';
 import { useNotifications } from './hooks/useNotifications';
 //Add to redux
 import { store } from './store/store';
@@ -17,6 +18,11 @@ export const TodoApp = () => {
         </div>
         <div className="row-md-4">
           <AddTask />
+        </div>
+      </div>
+      <div className="col d-flex gap-2 flex-wrap ms-5 mt-3 ">
+        <div className="row-md-8">
+          <ShowUsers />
         </div>
       </div>
       <ToastContainer autoClose={1800} />
