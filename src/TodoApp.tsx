@@ -12,7 +12,7 @@ export const TodoApp = () => {
   return (
     <Provider store={store}>
       <Header />
-      <div className="col d-flex gap-2 justify-content-around flex-wrap">
+      <div className="col d-flex gap-4  ms-5 flex-wrap">
         <div className="row-md-8">
           <ListTask />
         </div>
