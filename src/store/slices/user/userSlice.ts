@@ -20,7 +20,6 @@ export const userSlice = createSlice({
   reducers: {
     setLoadingUsers: (state) => {
       state.isLoading = true;
-      // state.usersData;
     },
     getUsersInfo: (state, action: PayloadAction<UserData>) => {
       state.isLoading = false;

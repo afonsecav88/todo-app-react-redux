@@ -1,10 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store/store';
+import { useAppDispatch, useAppSelector } from './useConfigSelectorAndDispatch';
 
 export const useSelectorAndDispatch = () => {
-  const tasks = useSelector((state: RootState) => state.todo);
-  const users = useSelector((state: RootState) => state.user);
-  const dispatch = useDispatch();
+  const tasks = useAppSelector((state: RootState) => state.todo);
+  const users = useAppSelector((state: RootState) => state.user);
+  const dispatch = useAppDispatch();
 
   return {
     tasks,
