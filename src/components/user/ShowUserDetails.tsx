@@ -23,7 +23,7 @@ export const ShowUserDetails = () => {
               <td>{user.last_name}</td>
               <td>{user.email}</td>
               <td>
-                <img src={user.avatar}></img>
+                <img className="img-size" src={user.avatar}></img>
               </td>
             </tr>
           </tbody>

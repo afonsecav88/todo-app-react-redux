@@ -12,4 +12,8 @@ html , body {
    background-color: white;
    width: 50vh;
 }
+.img-size {
+ width: 128px;
+ height: 128px;  
+}
 
