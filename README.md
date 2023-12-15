@@ -1,6 +1,10 @@
 # React Todo App Redux
 
 ## Aplicación para gestionar lista de tareas y paginado de usuarios implementando redux.
+- Uso de React.
+- Uso de Flexbox y Bootstrap.
+- Almacenamiento en LocalStorage.
+
 
 ### Módulo de tareas
 - Añadir una tarea.
