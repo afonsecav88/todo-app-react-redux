@@ -4,6 +4,7 @@
 - Uso de React.
 - Uso de Flexbox y Bootstrap.
 - Almacenamiento en LocalStorage.
+- Uso de React-Toastify.
 
 
 ### Módulo de tareas
